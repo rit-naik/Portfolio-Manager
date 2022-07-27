@@ -1,0 +1,38 @@
+td{
+    text-align: center;
+    font-size: 25px;
+}
+table{
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 13px; 
+    border-spacing: 0;
+}
+td{
+    width:130px;
+    height: 30px;
+    font-size: 22px;
+}
+
+button{
+    color: black;
+    background-color: lightgrey;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.b1{
+    border-left: 4px solid black;
+    height: 110px;
+}
+
+section{
+    border-radius: 10px;
+    font-size: 15px;
+    float: left;
+    position: relative;
+    left: 2%;
+    width: 90%;
+}

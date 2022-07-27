@@ -1,0 +1,93 @@
+html { overflow-x: hidden; }
+
+h1 {
+    color:purple;
+    font-style: normal;
+    font-size: 50px;
+}
+.h1s{
+    text-align: center;
+    
+}
+.h1new{
+    position: relative;
+    left: 43%;
+}
+  
+p {
+    color:navy;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#h{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color:rgb(251, 255, 4);
+    border:2px rgb(0, 0, 0) solid;
+    border-radius: 1px;
+    padding: 2px;
+    background-color: rgb(0, 132, 255);
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+button{  
+    width: 200px;
+    color:rgb(255, 255, 0);
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: normal;
+    background-color: blueviolet;
+    border-radius: 10px;
+    /* position: relative;
+    top: 0%;
+    left: 40%; */
+  }
+
+#para{
+    color: rgb(251, 255, 4);
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 40px;
+}
+
+#f{
+    color:yellow;
+    text-align: center;
+    background-color: darkred;
+    text-decoration: none;
+    border:2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    width: 13%;
+    position: relative;
+    left:21%;
+    display: inline-block;
+    line-height: 1.8;
+}
+
+section{
+    background-color:lightgreen;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-size: 28px;
+    float: left;
+    position: relative;
+    left: 2%;
+    width: 48%;
+}
+
+table{
+    width:700px;  
+    border:2px solid #000; 
+    border-collapse:collapse; 
+    background-color:white; 
+    font-size:25px;
+}

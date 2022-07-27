@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="format.css">
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <h1 >Form</h1>
+    <hr color="black">
+    <p>
+        <form onsubmit="add()" action="result.html">
+            <h2 style="font-size: 30px;">Personal Details</h2><br>
+
+            <label>Name: </label>
+            <input id="name" type="text" style="width: 23%; left:10.4%" required/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+            <label>Mobile number: </label>
+            <input id="num" type="number"/><br><br>
+
+            <label>Email: </label>
+            <input id="email" type="email" style="width: 20%; left:10.5%;"/><br><br>
+
+            <hr color="black">
+
+            <h2 style="font-size: 30px">Financial Details</h2><br>
+
+            <!-- Stocks -->
+            <h3 style="position:relative; font-size: 28px; left:45%;";>Stocks</h3>
+            <label>Stock Name: </label>
+            <input id="nos" type="text" style="width: 25%;" />&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Type:</label>&emsp;&emsp;&emsp;&emsp;
+            <select id="stocktype" style="font-size: 20px;">
+                <option>BSE</option>
+                <option>NSE</option>
+            </select>
+            <label>Date:</label>
+            <input id="dos" type="date"/><br><br>
+            <label >Quantity:</label>
+            <input id="qos" type="number" style="width: 5%;" value="0"/>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Initial Price/stock:</label>
+            <input id="cps" type="number" value="0"/>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label >Current price/stock:</label>
+            <input id="pps" type="number" value="0"/><br><br><br>
+
+            <!-- Fixed Income -->
+            <h3 style="position:relative; font-size: 26px; left:42.5%">Fixed Income</h3>
+            <label>FI Type: </label>&emsp;&emsp;&emsp;&emsp;
+            <select id="fitype" style="font-size: 20px;">
+                <option></option>
+                <option>FD(Fixed Deposit)</option>
+                <option>RD(Recurring Deposit)</option>
+                <option>FRD(Flexible RD)</option>
+                <option>CD(Corporate Deposit)</option>
+                <option>PPF(Public Provident Fund)</option>
+                <option>Other</option>
+            </select>
+            <label>Bank Name</label>
+            <input id="finame" type="text" style="width: 30%"/><br><br>
+            <label>Amount:</label>
+            <input id="cpi" type="text" value="0"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Start Date:</label>
+            <input id="sdfi" type="date"/>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Time Period:</label>
+            <input id="mdfi" type="number" value="0"/>
+            <label>&emsp;yrs.</label><br><br>
+            <label>Interest Rate:</label>
+            <input id="ratefi" type="text" style="width:5%" value="0"/>&emsp;&nbsp;
+            <label>%</label>
+
+            <!--Bullion-->
+            <h3 style="position:relative; font-size: 28px; left:45%;";>Bullion</h3>
+            <label>Type: </label>&emsp;&emsp;&emsp;&emsp;
+            <select id="bulltype" style="width:100px; font-size: 20px;">
+                <option> </option>
+                <option>Gold</option>
+                <option>Silver</option>
+            </select>&emsp;&emsp;&emsp;
+            <label>Date:</label>
+            <input id="bulldate" type="date"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label >Quantity:</label>
+            <input id="bullquant" type="number" style="width: 5%;" value="0"/>
+            <label>&emsp;gms.</label><br><br>
+            <label>Purchase Price/gram:</label>
+            <input id="bullcost" type="number" value="0"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <!-- <label>Today's price/gram:</label> -->
+            <!-- <input id="bullsell" type="number" value="0"/> -->
+            
+            <!-- Property -->
+            <h3 style="position:relative; font-size: 26px; left:44%">Property</h3>
+            <label>Property Details: </label>&nbsp;&nbsp;&nbsp;
+            <input id="propname" type="text" style="width:30%"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Date:</label>
+            <input id="propdate" type="date"/><br><br>
+            <label>Purchase Price: </label>
+            <input id="cprice" type="number" value="0"/>&emsp;&emsp;&emsp;&emsp;
+            <label>Latest Price:</label>
+            <input id="sprice" type="number" value="0"/><br><br><br>
+
+            <!-- Loan -->
+            <h3 style="position:relative; font-size: 26px; left:45.5%">Loan</h3>
+            <label>Loan Type: </label>&emsp;&emsp;&emsp;&emsp;
+            <select id="select" style="font-size: 20px;" >
+                <option>Home</option>
+                <option>Car</option>
+                <option>Business</option>
+                <option>Loan against property</option>
+                <option>Education</option>
+                <option>Personal</option>
+                <option>Term loan</option>
+                <option>Others</option>
+            </select>&emsp;&emsp;&emsp;&emsp;
+            <label>Bank Name: </label>
+            <input id="nameloan" type="text" style="width:30% "/><br><br>
+            <label>Amount: </label>
+            <input id="lcp" type="number" value="0"/>&emsp;&emsp;&emsp;&emsp;
+            <label>Time Period:</label>
+            <input id="lsd" type="number" value="0"/>
+            <label>&emsp;yrs.</label>&emsp;
+            <label>Interest Rate: </label>
+            <input id="lir" type="text" value="0"/>
+            <label>&emsp; %</label><br><br><br>
+
+            <!-- Other Assests -->
+            <h3 style="position:relative; font-size: 26px; left:43%">Other Assets</h3> 
+            <label>Asset Type:</label>&emsp;&emsp;&emsp;&emsp;
+            <select id="atype" style="font-size: 20px">
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Agriculture</option>
+                <option>Debt</option>
+                <option>Equity</option>
+                <option>Others</option>
+            </select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> Name: </label>
+            <input id="aname" type="text" style="width:30%"/><br><br>
+            <label>Amount: </label>
+            <input id="acp" type="text" value="0"/>&emsp;&emsp;&emsp;&emsp;
+            <label>Start Date:</label>
+            <input id="asd" type="date"/>&emsp;&emsp;&emsp;&emsp;
+            <label>Current Value: </label>
+            <input id="asp" type="text" value="0"/><br><br><br>
+            
+            <!-- Other Borrowings -->
+            <h3 style="position:relative; font-size: 26px; left:41.5%">Other Borrowings</h3>
+            <label>Name: </label>
+            <input id="nob" type="text" style="width:25%"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>Amount: </label>
+            <input id="cob" type="text" value="0"/>&emsp;&emsp;&emsp;&emsp;
+            <label>Date:</label>
+            <input id="dob" type="date"/>&emsp;&emsp;&emsp;&emsp;
+            <br><br><br><br>
+
+            <input id="new" type="submit" value="SAVE"/>
+        </form>
+    </p>
+</body>
+</html>

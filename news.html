@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="restyle.css">
+  <script type="text/javascript" src="news.js"></script>
+</head>
+<body>
+
+<h1 align="center" style="color:purple; font-size: 50px">News</h1>
+
+<span>Last Updated:- </span>
+<span id="date"></span>
+
+<h2 align="center">Market Action</h2>
+<center>
+<button onclick="ind()">Indian Indices</button>
+<button onclick="glo()">Global Indices</button>
+</center>
+
+<div id='indinc'>
+<!--<h2 align="center">Indian Indices</h2>                            Indian Indices-->
+<table class="roundedCorners" align="center" style="width:700px;background-color:white;border-radius: 10px;">
+  <tr align="center" width="40px" height="50px">
+    <td >Name</td>
+    <td >Value</td>
+    <td >Change</td>
+    <td >%Change</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Nifty 50</td>
+    <td>17779.30</td>
+    <td>149.80</td>
+    <td>0.85</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>Sensex</td>
+    <td>59691.39</td>
+    <td>550.23</td>
+    <td>0.93</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>Nifty Bank</td>
+    <td>38043.70</td>
+    <td>375.10</td>
+    <td>1.00</td>
+  </tr>
+  
+  <tr align="center" height="35px">
+    <td>Nifty IT</td>
+    <td>36042.60</td>
+    <td>190.20</td>
+    <td>0.53</td>
+  </tr>
+
+</table>
+<br>
+</div>
+
+<div id='global'>                                                <!--Global Indices-->              
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" width="40px" height="50px">
+    <td>Name</td>
+    <td>Price</td>
+    <td>Change</td>
+    <td>%Change</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Nikkei 225</td>
+    <td>30485.35</td>
+    <td>162.01	</td>
+    <td>0.53</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>Straits Times </td>
+    <td>3061.19</td>
+    <td>-3.35</td>
+    <td>-0.11</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>Hang Seng</td>
+    <td>24804.45</td>
+    <td>136.60</td>
+    <td>0.55</td>
+  </tr>
+  
+  <tr align="center" height="35px">
+    <td>CAC</td>
+    <td>6,663.77</td>
+    <td>-20.95</td>
+    <td>-0.31</td>
+  </tr>
+
+</table>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<h2 align="center">Stock Action</h2>
+<center>
+  <button onclick="act()">Most Active</button>
+  <button onclick="gai()">Top Gainers</button>
+  <button onclick="los()">Top Losers</button>
+</center>
+
+
+
+
+
+
+
+
+
+<div id='active'>                                           <!--Most Active-->
+  <h2 align="center">Most active</h2>
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" width="40px" height="50px">
+    <td>Company</td>
+    <td>Price</td>
+    <td>Change</td>
+    <td>Value(Rs. Cr.)</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Bajaj Finance</td>
+    <td>7647.45</td>
+    <td>235.95	</td>
+    <td>992.84</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>ITC</td>
+    <td>232.95	</td>
+    <td>2.20	</td>
+    <td>910.03</td>
+  </tr>	
+
+  <tr align="center" height="35px">
+    <td>Tata Steel</td>
+    <td>1397.00	</td>
+    <td>-39.75	</td>
+    <td>824.67</td>
+  </tr>
+  
+  <tr align="center" height="35px">
+    <td>Vodafone Idea</td>
+    <td>11.45	</td>
+    <td>0.20	</td>
+    <td>740.14</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<div id='gain'>                                           <!--Gainers-->
+<h2 align="center">Top Gainers</h2>                        
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" height="50px">
+    <td>Name</td>
+    <td>Value</td>
+    <td>Change</td>
+    <td>%Gain</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Bajaj Finserv</td>
+    <td>17,385.95	</td>
+    <td>652.95	</td>
+    <td>3.90</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Bajaj Finance</td>
+    <td>7,648.00	</td>
+    <td>236.50	</td>
+    <td>3.19</td>
+  </tr>
+  
+  <tr align="center" height="35px">
+    <td>Kotak Mahindra</td>
+    <td>1,954.30	</td>
+    <td>47.50</td>
+    <td>2.49</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Eicher Motors</td>
+    <td>2,923.00	</td>
+    <td>62.80	</td>
+    <td>2.20</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<div id='lose'>                                     <!--Losers-->
+<h2 align="center">Top Losers</h2>                        
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" height="50px">
+    <td>Name</td>
+    <td>Price</td>
+    <td>Change</td>
+    <td>%Loss</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Tata Steel</td>
+    <td>1,398.20	</td>
+    <td>-38.55	</td>
+    <td>-2.68</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>JSW Steel</td>
+    <td>680.50	</td>
+    <td>-8.95	</td>
+    <td>-1.30</td>
+  </tr>
+  
+  <tr align="center" height="35px">
+    <td>Hindalco</td>
+    <td>479.90	</td>
+    <td>-3.40	</td>
+    <td>-0.70</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>UPL</td>
+    <td>749.35	</td>
+    <td>-4.65</td>
+    <td>-0.62</td>
+  </tr>
+</table>
+<br>
+</div>
+
+
+
+
+
+
+
+<br>
+<center>
+  <button onclick="cur()">Currencies</button>
+  <button onclick="com()">Commodities</button>
+  <button onclick="bon()">Bonds</button>  
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='currency'>
+<h2 align="center">Currencies</h2>                  <!--Currencies-->
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" height="50px">
+    <td style="width: 220px;">Name</td>
+    <td>Value</td>
+    <td>Change</td>
+    <td>%Change</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>USD</td>
+    <td>73.70</td>
+    <td>-0.10</td>
+    <td>-0.13</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>EUR</td>
+    <td>86.54</td>
+    <td>-0.15</td>
+    <td>-0.17</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>GBP</td>
+    <td>101.81</td>
+    <td>-0.30</td>
+    <td>-0.29</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>JPY</td>
+    <td>67.04</td>
+    <td>-0.23</td>
+    <td>-0.35</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<div id='commodity'>
+<h2 align="center">Commodities</h2>               <!--Commodities-->
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" height="50px">
+    <td>Name</td>
+    <td>Value</td>
+    <td>Change</td>
+    <td>%Change</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Gold</td>
+    <td>46088</td>
+    <td>12</td>
+    <td>0.03</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Silver</td>
+    <td>61286</td>
+    <td>209</td>
+    <td>0.34</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Crudeoil</td>
+    <td>5322</td>
+    <td>-29</td>
+    <td>-0.54</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Natural Gas</td>
+    <td>389.4</td>
+    <td>-0.1</td>
+    <td>-0.03</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<div id='bond'>                                            <!--Bonds-->
+<h2 align="center">Bonds</h2> 
+<table align="center" style="width:700px;background-color:white">
+  <tr align="center" height="50px">
+    <td>Name</td>
+    <td>Price</td>
+    <td>Change</td>
+    <td>%Change</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>SBI</td>
+    <td>466.20</td>
+    <td>2.50</td>
+    <td>0.54</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>Indiabulls Hsg</td>
+    <td>239.80</td>
+    <td>-2.05</td>
+    <td>-0.85</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>NTPC</td>
+    <td>124.30</td>
+    <td>0.30</td>
+    <td>0.24</td>
+  </tr>
+
+  <tr align="center" height="35px">
+    <td>REC</td>
+    <td>156.80</td>
+    <td>0.30</td>
+    <td>0.24</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<section>
+For more news realted information ➡ 
+<a href="https://www.moneycontrol.com/news/" target="_blank">Click here</a>
+</section>
+
+</body>
+</html>
